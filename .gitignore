@@ -1,0 +1,19 @@
+# Build output
+bin/
+out/
+*.class
+
+# Local database credentials (copy db.properties.example -> db.properties)
+db.properties
+
+# IDE files (they contain machine-specific paths)
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,146 @@
+/* Horizon Store System - shared stylesheet
+   Palette: deep purple #2D1B69, mid purple #4A2C9E, orange #F5A623, background #F0EBF8 */
+
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-background-color: #F0EBF8;
+    -fx-accent: #4A2C9E;
+    -fx-selection-bar: #4A2C9E;
+    -fx-selection-bar-non-focused: #B8A9D9;
+    -fx-focus-color: #F5A623;
+    -fx-faint-focus-color: rgba(245, 166, 35, 0.25);
+}
+
+/* ── Top bar ─────────────────────────────────────────── */
+.top-bar {
+    -fx-background-color: linear-gradient(to right, #2D1B69, #4A2C9E);
+    -fx-padding: 14 24 14 24;
+    -fx-alignment: center-left;
+    -fx-effect: dropshadow(gaussian, rgba(45, 27, 105, 0.35), 8, 0.2, 0, 2);
+}
+.top-title { -fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold; }
+.top-brand { -fx-text-fill: #F5A623; -fx-font-size: 18px; -fx-font-weight: bold; }
+
+.back-btn {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-insets: 0;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14 6 14;
+    -fx-cursor: hand;
+}
+.back-btn:hover { -fx-background-color: rgba(255, 255, 255, 0.28); }
+
+/* ── Form panel (left side) ──────────────────────────── */
+.form-panel {
+    -fx-background-color: white;
+    -fx-padding: 18;
+}
+.form-scroll {
+    -fx-background-color: white;
+    -fx-background: white;
+    -fx-padding: 0;
+    -fx-effect: dropshadow(gaussian, rgba(45, 27, 105, 0.10), 10, 0, 2, 0);
+}
+.form-title { -fx-text-fill: #2D1B69; -fx-font-size: 20px; -fx-font-weight: bold; }
+.field-label { -fx-text-fill: #2D1B69; -fx-font-size: 12px; -fx-font-weight: bold; }
+.popup-title { -fx-text-fill: #2D1B69; -fx-font-size: 18px; -fx-font-weight: bold; }
+.section-title { -fx-text-fill: #2D1B69; -fx-font-size: 20px; -fx-font-weight: bold; }
+
+/* ── Inputs ──────────────────────────────────────────── */
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #D9CFF0;
+    -fx-border-radius: 8;
+    -fx-padding: 7 10 7 10;
+    -fx-font-size: 14px;
+}
+.text-field:focused {
+    -fx-border-color: #F5A623;
+    -fx-border-width: 1.5;
+}
+.combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #D9CFF0;
+    -fx-border-radius: 8;
+}
+
+/* ── Buttons ─────────────────────────────────────────── */
+.btn-primary, .btn-accent, .btn-danger {
+    -fx-background-insets: 0;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 14 8 14;
+    -fx-cursor: hand;
+}
+.btn-primary { -fx-background-color: #2D1B69; }
+.btn-primary:hover { -fx-background-color: #4A2C9E; }
+.btn-primary:pressed { -fx-background-color: #1F1250; }
+
+.btn-accent { -fx-background-color: #F5A623; -fx-text-fill: #2D1B69; }
+.btn-accent:hover { -fx-background-color: #FFB84A; }
+.btn-accent:pressed { -fx-background-color: #DB9014; }
+
+.btn-danger { -fx-background-color: #C62828; }
+.btn-danger:hover { -fx-background-color: #E53935; }
+.btn-danger:pressed { -fx-background-color: #A31F1F; }
+
+/* ── Status line under forms ─────────────────────────── */
+.status-ok { -fx-text-fill: #1E8E3E; -fx-font-weight: bold; }
+.status-error { -fx-text-fill: #C62828; -fx-font-weight: bold; }
+
+/* ── Tables ──────────────────────────────────────────── */
+.table-view {
+    -fx-control-inner-background: white;
+    -fx-control-inner-background-alt: #FAF8FE;
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #E3DAF3;
+    -fx-border-radius: 12;
+    -fx-table-cell-border-color: transparent;
+}
+.table-view .column-header-background { -fx-background-color: #EFE9FA; -fx-background-radius: 12 12 0 0; }
+.table-view .column-header, .table-view .filler { -fx-background-color: transparent; -fx-size: 36; }
+.table-view .column-header .label { -fx-text-fill: #2D1B69; -fx-font-weight: bold; }
+.table-row-cell { -fx-cell-size: 34px; }
+
+/* ── Reports result card ─────────────────────────────── */
+.result-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-border-color: #E8E0F5;
+    -fx-border-radius: 16;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(45, 27, 105, 0.12), 10, 0.2, 0, 4);
+}
+
+/* ── Dashboard ───────────────────────────────────────── */
+.welcome-title { -fx-text-fill: #2D1B69; -fx-font-size: 34px; -fx-font-weight: bold; }
+.welcome-subtitle { -fx-text-fill: #7B5EA7; -fx-font-size: 16px; }
+
+.dash-card {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 14;
+    -fx-padding: 14 18 14 18;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(45, 27, 105, 0.12), 10, 0.1, 0, 3);
+}
+.dash-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(45, 27, 105, 0.28), 16, 0.15, 0, 6);
+    -fx-translate-y: -3;
+}
+.card-initial { -fx-text-fill: #2D1B69; -fx-font-size: 20px; -fx-font-weight: bold; }
+.card-title { -fx-text-fill: #2D1B69; -fx-font-size: 18px; -fx-font-weight: bold; }
+.card-subtitle { -fx-text-fill: #7B5EA7; -fx-font-size: 12px; }
+
+.footer { -fx-padding: 8 24 8 24; -fx-alignment: center-left; -fx-background-color: rgba(45, 27, 105, 0.06); }
+.footer-text { -fx-text-fill: #5A4B8A; -fx-font-size: 12px; }
+.db-ok { -fx-text-fill: #1E8E3E; -fx-font-size: 12px; -fx-font-weight: bold; }
+.db-error { -fx-text-fill: #C62828; -fx-font-size: 12px; -fx-font-weight: bold; }
